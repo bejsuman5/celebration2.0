@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    background-color: black;
+    overflow: hidden;
+    /* Prevent scrolling while loading */
+}
+
+.main-section {
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.9);
+    border: 2px solid #0ff;
+}
+
+.gift-img {
+    background-position: center;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    border: 3px solid #0ff;
+    border-radius: 15px;
+}
+
+.gift-title-body {
+    position: relative;
+    z-index: 5;
+}
+
+.gift-title-text {
+    color: #0ff;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000,
+        3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.gift-title .icon {
+    color: purple;
+    border: 1px solid black;
+    background-color: yellow;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 1);
+}
+
+/* swiper */
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}

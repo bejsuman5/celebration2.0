@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    background-color: black;
+    overflow: hidden;
+    /* Prevent scrolling while loading */
+}
+
+.main-section {
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.9);
+    border: 2px solid #0ff;
+    position: relative;
+    width: 90vw;
+    height: 90vh;
+    background: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+}
+
+/* .image-section {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    border: 6px solid black;
+    border-radius: 10px;
+} */
+
+.gift-img {
+    background-position: center;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    border: 6px solid black;
+    border-radius: 10px; */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    border: 3px solid #0ff;
+    border-radius: 15px;
+}
+
+.gift-title-text {
+    color: #0ff;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000,
+        3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.gift-title .icon {
+    color: purple;
+    border: 1px solid black;
+    background-color: yellow;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 1);
+}
+
+
+
+/* swiper */
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+/* heart */
+.small-heart {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: red;
+    border-radius: 50%;
+    animation: fly 5s linear infinite;
+}
+
+.small-heart::before,
+.small-heart::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 50px;
+    height: 90px;
+    background: inherit;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.small-heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+@keyframes fly {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100vh) rotate(0deg);
+        opacity: 1;
+    }
+}

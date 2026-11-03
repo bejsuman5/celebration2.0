@@ -759,3 +759,20 @@ window.onload = () => {
   handleResize();
   renderLoop();
 };
+
+
+
+
+
+
+// typewriter function
+// *************************************************************************************
+// *************************************************************************************
+
+const giftBtn = document.querySelector('.gift-btn');
+const urlParams = new URLSearchParams(window.location.search);
+const happy_birthday = urlParams.get('happy_birthday') || 'default';
+
+const baseURL = 'gift.html';
+let responsiveURL = baseURL +'?happy_birthday='+ happy_birthday;
+document.getElementById('giftBtnId').setAttribute('href', responsiveURL);
